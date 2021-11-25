@@ -1,0 +1,169 @@
+/* スクロールの幅の設定 */
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+/* スクロールの背景の設定 */
+::-webkit-scrollbar-track {
+border-radius: 5px;
+box-shadow: 0 0 4px #aaa inset;
+}
+
+/* スクロールのつまみ部分の設定 */
+::-webkit-scrollbar-thumb {
+border-radius: 5px;
+background: gray;
+}
+
+#container3{
+  align:center;
+  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
+  background-color: white;
+}
+
+header{
+  height:125px;
+background-color: #160F38;
+  font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer {
+background-color:#160F38;
+color: white;
+font-size: 15px;
+height:125px;
+padding: 10px 0px;
+text-align: right;
+font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2 {
+position: relative;
+padding: 1rem .5rem;
+}
+
+h2:after {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 5px;
+content: '';
+background-color:#051937;
+}
+html{scroll-behavior : smooth;
+    background-color:#FBFAFF;
+}
+table {
+border-collapse: collapse;  /* セルの線を重ねる */
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+table th{
+border: solid 1px black;
+padding: 10px;
+text-align: center;
+}
+
+.gnav {
+display: flex;
+height: 2rem;
+margin: 0 auto;
+width: 1100px;
+z-index:10;
+}
+.gnav > li {/*親階層のみ幅を25%にする*/
+width: 25%;
+}
+/*全てのリスト・リンク共通*/
+.gnav li {
+list-style: none;
+position: relative;
+}
+.gnav li a {
+
+border-right: 1px solid #eee;
+color: white;
+display: block;
+height: 2rem;
+line-height: 2rem;
+text-align: center;
+text-decoration: none;
+width: 100%;
+z-index:10;
+}
+.gnav li li {
+height: 0;
+overflow: hidden;
+transition: .5s;
+background-color:#463F6D;
+}
+.gnav li li a {
+border-top: 1px solid #eee;
+}
+.gnav li:hover > ul > li {
+height: 2rem;
+overflow: visible;
+z-index:10;
+}
+
+.box17 {
+    position: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 300px;
+    top: 0;
+    background: #efefef;
+
+  }
+
+  .img_wrap{
+    border: 1px solid #ddd;
+    width: 45%;
+    height: 45%;
+    margin: 20px auto 0;
+    transition-duration: 0.5s;
+  }
+  .img_wrap img{
+    width: 100%;
+    cursor: pointer;
+  }
+  .img_wrap:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.25s;
+  }
+
+
+.design1 {text-shadow: 1px 1px 2px red;}
+.design2 {text-shadow: 1px 1px 2px blue;}
+.design3 {text-shadow: 1px 1px 2px yellow;}
+.design4 {text-shadow: 1px 1px 2px green;}
+.design5 {text-shadow: 1px 1px 2px pink;}
+
+.f01 {
+  text-decoration: none;
+  color:black;
+}
+
+.kousin {
+		overflow:auto;
+		width:79%; height:350px;
+		padding:5px;
+		border:2px dotted #ffffff;
+		color:#e8e8e8;
+		background-color:#051937;
+		line-height:1.5em;
+	}
+
+  .date{
+    color:darkgreen;
+  }
+
+.subtitle{
+  color:lightgreen;
+}
+.kousin a{
+  color: lightblue;
+}
